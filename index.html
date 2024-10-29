@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-crown"></i>
+        <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-bell"></i>
+            <hr>
+            <p>some stuff here</p>
+        </span>
+    </header>
+
+    <main>
+        <section id="sidebar">
+            <article id="article-1">
+                <h1>A</h1>
+                <p id="test">Admin Name</p>
+                <p>ADMIN</p>
+            </article>
+            <article id="article-2">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-regular fa-bell"></i>Add New Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="overview.html">
+                            <i class="fa-solid fa-house"></i>Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-database"></i>Manage Products
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-gear"></i>Reports
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="section-1">
+            <h1>Add New Products </h1>
+            <form action="POST">
+                <ul>
+                    <li>
+                        <label for="product-name">Product Name</label>
+                        <input type="text" name="input" id="product-name" placeholder="product name">
+                    </li>
+                    <li>
+                        <label for="product-category">Product Category</label>
+                        <input type="text" name="input" id="product-category" placeholder="product category">
+                    </li>
+                    <li>
+                        <label for="product-description">Product Description</label>
+                        <input type="text" name="input" id="product-description" placeholder="product description">
+                    </li>
+                    <li>
+                        <label for="company-name">Company Name</label>
+                        <input type="text" name="input" id="company-name" placeholder="company name">
+                    </li>
+                    <li>
+                        <label for="product-image">Upload Product Image</label>
+                        <input type="text" name="input" id="product-image" placeholder="product-image">
+                    </li>
+                    <li>
+                        <label for="MFD">Manufacturing Date</label>
+                        <input type="text" name="input" id="MFD" placeholder="manufacturing date">
+                    </li>
+                    <li>
+                        <label for="serial-number">Serial Number</label>
+                        <input type="text" name="input" id="serial-number" placeholder="serial-number">
+                    </li>
+                    <li>
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" name="input" id="expiry-date" placeholder="expiry-date">
+                    </li>
+                </ul>
+                <input type="checkbox" id="ts&cs">
+                <label for="ts&cs"> i agree taht all the information i stated here is correct</label>
+                <button>Tokenize on Blockchain</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

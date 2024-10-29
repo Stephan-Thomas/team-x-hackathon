@@ -1,0 +1,39 @@
+#section-1 form ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+    padding: 0;
+}
+
+#section-1 form ul li{
+    list-style: none;
+}
+
+#section-1 ul label{
+display: block;
+padding-bottom: 5px;
+}
+
+#section-1 ul input{
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+#section-1 ul input:focus{
+    border: 1px solid inherit;
+    outline: none;
+}
+
+#section-1 button{
+    border: 1px solid transparent;
+    padding: 10px;
+    background-color: #77cc00;
+    color: white;
+    border-radius: 6px;
+    display: block;
+    margin-top: 20px;
+}

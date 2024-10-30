@@ -1,7 +1,8 @@
- #article-3{
+#article-3{
     display: flex;
     gap: 20px;
     padding-bottom: 50px;
+    justify-content: space-evenly;
 }
 
 #article-3 nav{
@@ -35,6 +36,7 @@ table{
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+    padding: 10px;
 }
 
 th{
@@ -50,16 +52,53 @@ td{
     border-bottom: 1px solid #ddd;
 }
 
-table button{
-    background-color: white;
-    color: #1d4ed8;
-    border: 1px solid #1d4ed8;
-    width: 60px;
-    height: 30px;
-    border-radius: 4px;
+#article-4 h1{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
-table button:hover{
+#article-5{
+    display: flex;
+    margin-top: 50px;
+}
+
+#article-5 #div-1{
+    background-color: #054b43;
     color: white;
-    background-color: #1d4ed8;
+    /* border-radius: 40px; */
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    /* clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%); */
+    flex: 1;
+    position: relative;
+    width: 300px;
+    height: 290px;
+    padding: 5px 20px;
+}
+
+#article-5 div img{
+    width: inherit;
+    height: inherit;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#article-5 #div-2{
+ flex: 1;
+ width: 400px;
+ height: 300px;
+}
+
+.curve-overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 40px;
+    height: 100%;
+    background-color: #054b43;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    z-index: 1;
 }
